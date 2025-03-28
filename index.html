@@ -7,121 +7,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    .section-title { text-align: center; font-size: 28px; margin: 30px 0 10px; color: #333; }
-    .carousel-container { max-width: 800px; margin: 0 auto 50px; position: relative; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    .carousel { display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 20px; padding: 10px; }
-    .review-card { flex: 0 0 300px; background: #fafafa; border-radius: 10px; padding: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .review-card img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
-    .review-card h4 { margin: 10px 0 5px; }
-    .review-card p { font-size: 15px; color: #444; }
+    .section-title { text-align: center; font-size: 28px; margin: 40px 0 10px; color: #333; }
+    .grid-container { max-width: 1100px; margin: 0 auto 50px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 0 20px; }
+    .review-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .review-card img.avatar { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; }
+    .review-card h4 { margin: 5px 0; font-size: 18px; }
+    .review-card p { font-size: 15px; color: #444; text-align: center; }
+    .review-header { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 10px; }
+    .stars { color: #FF5A5F; font-size: 16px; }
+    .airbnb-logo { height: 20px; }
   </style>
 </head>
 <body>
 <h2 class="section-title">Suite 1</h2>
-<div class="carousel-container">
-<div class="carousel">
+<div class="grid-container">
 
         <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Michael">
-          <h4>Michael</h4>
-          <p>"Clean, comfortable, and a great location. I’d definitely stay again."</p>
-        </div>
-        
-        <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Jessica">
-          <h4>Jessica</h4>
-          <p>"The suite was exactly as described. Super cozy and private!"</p>
-        </div>
-        
-        <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="David">
-          <h4>David</h4>
-          <p>"Everything was spotless. Great communication with the host."</p>
-        </div>
-        
-        <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Emily">
-          <h4>Emily</h4>
-          <p>"Perfect for a weekend getaway. Quiet neighborhood."</p>
-        </div>
-        
-        <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Chris">
-          <h4>Chris</h4>
-          <p>"The check-in was smooth and the bed was very comfortable."</p>
-        </div>
-        </div>
-</div>
-<h2 class="section-title">Suite 2</h2>
-<div class="carousel-container">
-<div class="carousel">
-
-        <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Sarah">
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/80e34814-c843-4b57-8e01-4ed3b3976011.jpg?im_w=240" alt="Sarah">
           <h4>Sarah</h4>
-          <p>"Beautiful space with thoughtful touches. Highly recommend!"</p>
+          <p>"I have had many Airbnb stays and this has landed in my top 5 for a lot of reasons. The best part being how clean this space was. The hosts definitely go above and beyond to make sure their home is spotless. Could not have asked for more!"</p>
         </div>
         
         <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="James">
-          <h4>James</h4>
-          <p>"Very stylish and clean. Felt like a boutique hotel."</p>
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/f96c6fd6-e8be-4f5c-86e1-5f19c187bc68.jpg?im_w=240" alt="Deanna">
+          <h4>Deanna</h4>
+          <p>"Silas is a fabulous host and his place is perfect for a getaway to Pompano! It's quiet, safe, private, and really comfortable! We will definitely return!"</p>
         </div>
         
         <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Olivia">
-          <h4>Olivia</h4>
-          <p>"Wonderful host. The suite had everything we needed."</p>
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/32a3e13e-e46c-41c1-bfb7-09f1e7ea96bc.jpg?im_w=240" alt="Annette">
+          <h4>Annette</h4>
+          <p>"We reserved both Suite 1 & 2 for our family. Beautiful outdoor setting with games, BBQ, lighting, and seating. Excellent guest service and super quick responses!"</p>
         </div>
         
         <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Daniel">
-          <h4>Daniel</h4>
-          <p>"Super clean and quiet. Loved the decor and vibe."</p>
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/6181a798-455f-4c5f-8961-18767349c87b.jpg?im_w=240" alt="Alejandro">
+          <h4>Alejandro</h4>
+          <p>"Really nice room with clear instructions. It had everything as advertised and more. I had a lovely time staying here!"</p>
         </div>
         
         <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Sophia">
-          <h4>Sophia</h4>
-          <p>"A gem in Pompano! Close to everything and very cozy."</p>
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/9c72a94b-3b88-4b58-912d-ea305fb97c11.jpg?im_w=240" alt="Marcdala">
+          <h4>Marcdala</h4>
+          <p>"Charming and cozy Airbnb with great amenities. Hosts were welcoming, respectful, and super helpful. Highly recommend!"</p>
         </div>
         </div>
-</div>
+<h2 class="section-title">Suite 2</h2>
+<div class="grid-container">
+
+        <div class="review-card">
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/97c361b4-ccfd-4f25-b31f-9970149b2c2e.jpg?im_w=240" alt="Brooke">
+          <h4>Brooke</h4>
+          <p>"Everything looked just like the photos. The suite was very private and super clean. Friendly hosts and easy check-in!"</p>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/32a3e13e-e46c-41c1-bfb7-09f1e7ea96bc.jpg?im_w=240" alt="Annette">
+          <h4>Annette</h4>
+          <p>"We reserved both Suite 1 & 2 for our family. Nicely decorated and secure. Will be back again!"</p>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/17efb777-62e2-4d60-a331-fec3a3dff3fd.jpg?im_w=240" alt="Jessica">
+          <h4>Jessica</h4>
+          <p>"This place is an absolute gem! Quiet, cozy, with amazing hosts who made us feel right at home. 100000/10!"</p>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/b4450db9-f6e1-49fd-a0fd-cf0d5706a6c6.jpg?im_w=240" alt="Victor">
+          <h4>Victor</h4>
+          <p>"I had an amazing 30-day stay. The backyard has a great ambiance to grill and hang out. I would recommend their units to anybody!"</p>
+        </div>
+        </div>
 <h2 class="section-title">Suite 3</h2>
-<div class="carousel-container">
-<div class="carousel">
+<div class="grid-container">
 
         <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Ryan">
-          <h4>Ryan</h4>
-          <p>"Staying in the RV was a unique and fun experience!"</p>
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/8f52a865-b66a-4124-a5fa-40634b9278ef.jpg?im_w=240" alt="Melanie">
+          <h4>Melanie</h4>
+          <p>"I loved it! Very nice and everything clean. Several activities included in the courtyard. Will stay again!"</p>
         </div>
         
         <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Amanda">
-          <h4>Amanda</h4>
-          <p>"The trailer was super clean and surprisingly spacious."</p>
-        </div>
-        
-        <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Ethan">
-          <h4>Ethan</h4>
-          <p>"Everything worked perfectly. Great outdoor shower too!"</p>
-        </div>
-        
-        <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Isabella">
-          <h4>Isabella</h4>
-          <p>"Cozy and creative space. Felt like a mini adventure."</p>
-        </div>
-        
-        <div class="review-card">
-          <img src="https://via.placeholder.com/80" alt="Lucas">
-          <h4>Lucas</h4>
-          <p>"Private, peaceful, and full of charm. Loved it!"</p>
+          <div class="review-header">
+            <img class="airbnb-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb logo">
+            <span class="stars">★★★★★</span>
+          </div>
+          <img class="avatar" src="https://a0.muscache.com/im/pictures/user/feff49df-0f1d-4e0d-9e62-56abf8c8c5e4.jpg?im_w=240" alt="Coleen">
+          <h4>Coleen</h4>
+          <p>"Lovely couple and sweet place. Hosts are very welcoming and available. It was our first RV stay and we loved it!"</p>
         </div>
         </div>
-</div>
-
-</body>
-</html>
+</body></html>
